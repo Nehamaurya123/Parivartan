@@ -1,0 +1,211 @@
+@import "_base";
+
+.messages{
+  width: 100%;
+  margin-top: 30px;
+
+  .connections{
+    border: 1px solid $light-grey;
+    background: $white;
+    border-bottom: none;
+
+    .title{
+      padding: 15px 15px 0 15px;
+    }
+
+    .search-widget{
+      width: 100%;
+      border-bottom: 1px solid $light-grey;
+      position: relative;
+      padding: 15px;
+
+      input{
+        width: 100%;
+        padding: 10px 15px 10px 40px;
+        border: 1px solid $light-grey;
+      }
+
+      .ico{
+        position: absolute;
+        left: 25px;
+        top: 21px;
+        font-size: 18px;
+      }
+    }
+
+    .user-list{
+      height: calc(100vh - 186px);
+      overflow: hidden;
+      overflow-y: scroll;
+
+      li{
+        padding-left: 70px;
+        cursor: pointer;
+        transition: $transition;
+        border-color: $off-white;
+        border-left: 4px solid transparent;
+
+        &:hover, &.active{
+          background: $off-white;
+        }
+
+        &.active{
+          border-left: 4px solid $blue;
+        }
+
+        .avatar{
+          left: 15px;
+        }
+
+        .last-message{
+          margin-top: 5px;
+          height: 20px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .message-list{
+    background: $off-white;
+    border: 1px solid $light-grey;
+    border-bottom: none;
+    border-left: none;
+    height: calc(100vh - 81px);
+    position: relative;
+
+    .from{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $white;
+      width: 100%;
+      border-bottom: 1px solid $light-grey;
+      padding: 20px 15px 20px 70px;
+
+      .avatar{
+        width: 40px;
+        height: 40px;
+        left: 15px;
+        top: 15px;
+      }
+    }
+
+    .all-messages{
+      margin-top: 74px;
+      position: relative;
+      height: calc(100vh - 320px);
+      overflow: hidden;
+      overflow-y: auto;
+      width: 100%;
+
+      ul{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex: 1;
+        min-height: calc(100vh - 320px);
+        justify-content: flex-end;
+        flex-direction: column;
+
+        li{
+          width: 100%;
+          position: relative;
+          padding: 0 15px;
+          margin: 15px 0;
+          display: list-item;
+          vertical-align: baseline;
+
+          &.date{
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+
+            i{
+              vertical-align: middle;
+              display: inline-block;
+              font-size: 1.2em;
+              margin-top: -5px;
+            }
+          }
+
+          .text{
+            display: inline-block;
+            max-width: 80%;
+            background: $white;
+            box-shadow: $default-box-shadow;
+            padding: 10px 15px;
+            text-align: left;
+
+            .px10{
+              margin-top: 5px;
+            }
+          }
+
+          &.connection{
+            padding-left: 60px;
+
+            .avatar{
+              width: 30px;
+              height: 30px;
+              left: 15px;
+            }
+          }
+
+          &.you{
+            text-align: right;
+            .text{
+              background: $light-grey;
+            }
+          }
+        }
+      }
+    }
+
+    .send-message{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: $white;
+      border-top: 1px solid $light-grey;
+
+      textarea{
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        padding: 15px;
+        height: 100px;
+        resize: none;
+      }
+
+      .actions{
+        border-top: 1px solid $light-grey;
+        background: $off-white;
+        position: relative;
+        padding: 10px 15px 30px 15px;
+
+        a{
+          margin-right: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          color: $grey;
+
+          i{
+            font-size: 1.3em;
+          }
+
+          &:hover{
+            color: $black;
+          }
+        }
+
+        .btn{
+          position: absolute;
+          right: 15px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}

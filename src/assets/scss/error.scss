@@ -1,0 +1,24 @@
+@import "_base";
+
+
+.error-page{
+  padding-top: 80px;
+
+  .error-404{
+    .title{
+      margin: 30px 0 25px 0;
+    }
+
+    .image{
+      padding: 0 50px;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    p{
+      margin-bottom: 10px;
+    }
+  }
+}

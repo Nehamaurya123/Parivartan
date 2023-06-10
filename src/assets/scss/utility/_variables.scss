@@ -1,0 +1,70 @@
+$red: #db495e;
+$pink: #ea1f8d; 
+$blue: #5b3f99;
+$yellow: #f6961d ;
+$green: #00ba73;
+$green-light: #00ba73e1;
+$black: #1c132f;
+$grey: #494259;
+$light-grey: #777182;
+$light-grey-2: #d7d3df;
+$white: #ffffff;
+$off-white: #f2f2f2;
+
+$font-family: 'Lato', sans-serif;
+
+$colors: 
+  "white" $white,
+  "green" $green,
+  "red" $red,
+  "pink" $pink,
+  "black" $black,
+  "blue" $blue,
+  "yellow" $yellow,
+  "light-grey" $light-grey,
+  "off-white" $off-white,
+  "grey" $grey;
+
+$weights: (400, 700);
+$aligns: (left, center, right);
+$font-sizes: (36, 18, 14, 12, 10);
+
+$radius: 2px;
+$default-size: 14px;
+$default-weight: 400;
+
+$box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.15);
+$default-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+$transition: all 0.3s linear;
+
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-sm: $container-tablet !default;
+
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-md:$container-desktop !default;
+
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-lg: $container-large-desktop !default;
+$screen-xs: 480px !default;
+$screen-xs-min: $screen-xs !default;
+$screen-phone: $screen-xs-min !default;
+
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+$screen-tablet: $screen-sm-min !default;
+
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+$screen-desktop: $screen-md-min !default;
+
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+$screen-lg-desktop: $screen-lg-min !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+

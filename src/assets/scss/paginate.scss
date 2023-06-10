@@ -1,0 +1,45 @@
+.pr-page-con{
+  padding: 10px;
+  display: table;
+  width: 100%;
+  .pr-page-summary{
+    width: auto;
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+    span{margin-left: 50px;}
+  }
+  .pr-page-action{
+    width: auto;
+    float: right;
+    .pr-pagination{
+      display: block;
+      li{
+        background: #fff;
+        padding: 10px 13px;
+        font-size: 12px;
+        float: left;
+        border: 1px solid #eee;
+        border-right: 0;
+        display: inline-block;
+        &:last-child{
+          border-right: 1px solid #eee;
+        }
+        &.active{
+          cursor: pointer;
+          &:hover{
+            background: #e5e5e5;
+          }
+        }
+        &.inactive{
+          cursor: default;
+          background: #ddd;
+          &:hover{
+            background: #ddd;
+          }
+          &.cpageval{background: rgb(23, 97, 255); color: #fff;}
+        }
+      }
+    }
+  }
+}

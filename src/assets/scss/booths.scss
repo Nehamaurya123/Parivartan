@@ -1,0 +1,147 @@
+@import '_base';
+.booths{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #f2f2f2;
+  .left-panel{
+    width: 400px;
+    height: 100%;
+    background: #fbfbfb;
+    position: fixed;
+    box-shadow: 5px 0px 5px rgba(0, 0,0, 0.08);
+    overflow-y: scroll;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    
+  }
+  .action{
+    float: right;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    i{font-size: 16px;}
+    border: 0;
+    background: transparent;
+    &.positive{
+      color: #ea1f8d;
+    }
+    &.negative{
+      color: #999;
+    }
+    &:hover{background: #eee;}
+  }
+  .booth-search{
+    width: 400px;
+    height: 40px;;
+    position: fixed;
+    background: #f1f1f1;
+    border-bottom: 1px solid #eee;
+    .booth-search-inner{
+      position: relative;
+      height: 100%;
+      .left{
+        margin-right: 40px;
+        padding: 5px;
+        padding-left: 8px;
+        height: 100%;
+      }
+      input{
+        width: 100%; 
+        height: 100%;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        background: #fff;
+        padding: 3px 5px;
+        color: #777;
+        font-size: 14px;
+      }
+    }
+    .icon-search{
+      font-size: 20px;
+      float: right;
+      padding: 5px 12px;
+      cursor: pointer;
+    }
+  }
+  .heading{
+      color: #999999;
+      font-size: 12px;
+  }
+  .right-panel{
+    margin-left: 403px;
+    margin-right: 100px;
+    padding: 0px;
+    height: 100%;
+    padding-bottom: 70px;
+  }
+  .left-panel-inner{
+      
+  }
+  .block{
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #eee;
+    padding: 25px;
+    
+    position: relative;
+    &:hover{background: rgba(200,200,220,0.1)}
+    .number{
+      float: left;
+      width: 50px;
+      min-height: 50px;
+      cursor: pointer;
+      .circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background: #fff;
+        border: 1px solid #efefef;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+    .info{
+      margin-left: 50px;
+      .boothname{
+        color: #333;
+        font-weight: 500;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .boothaddress{
+        margin-top: 7px;
+        color: #999;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .boothmeta{
+        margin-top: 7px;
+        font-size: 14px;
+        
+        >div{
+          display: inline-block;
+          margin-right: 10px;
+        }
+        >a{
+          display: inline-block;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        .purpal{
+          color: #534b97;
+        }
+        .black{
+          color: #333;
+        }
+        .green{
+          color: #7ab573;
+        }
+        
+        
+      }
+    }
+  }
+}

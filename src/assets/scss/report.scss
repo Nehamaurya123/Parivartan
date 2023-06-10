@@ -1,0 +1,161 @@
+@import '_base';
+.report{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #f2f2f2;
+  .left-panel{
+    width: 300px;
+    height: 100%;
+    background: #fbfbfb;
+    position: fixed;
+    box-shadow: 5px 0px 5px rgba(0, 0,0, 0.08);
+  }
+  .heading{
+      color: #999999;
+      font-size: 12px;
+  }
+  .right-panel{
+    margin-left: 305px;
+    margin-right: 100px;
+    padding: 20px;
+    height: 100%;
+    padding-bottom: 130px;
+    .voter-data{
+      background: #fff;
+      margin-top: 15px;
+      min-height: 100px;
+      display: table;
+      width: 100%;
+      border: 1px solid #eee;
+      height: 100%;
+      .graph-box{
+        width: 50%;
+       position: relative;
+        float: left;
+        padding: 10px;
+        &.graph-box-100{
+          width: 100%;
+        }
+      }
+      .graph-box-outer{
+        border: 1px solid #eee;
+      }
+      .voter-data-graph{
+        height: 100%;
+        overflow: scroll;
+      }
+    }
+    .graph-box-header{
+      padding: 10px;
+      background: #f2f2f2;
+    }
+    .graph-box-content{
+      padding: 10px;
+      padding-bottom: 0px;
+      margin-bottom: -30px;
+    }
+  }
+  .left-panel-inner{
+   
+    .booth-selection{
+      background: #f2f2f2;
+      min-height: 50px;
+      padding: 20px;
+      .select-title{
+        margin-top: 10px;
+        color: #000000;
+        font-size: 16px;
+        .dropdown{width: 100%;}
+        span{
+          display: block;
+          margin-right: 25px;
+          white-space: nowrap; 
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        i{
+          float: right;
+        }
+      }
+      .booth-info{
+        font-size: 11px;
+        color: #999999;
+        margin-top: 8px;
+        span{margin-right: 10px;}
+      }
+    } 
+
+    .data-block{
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      display: table;
+      width: 100%;
+      &:last-child{border: 0;}
+      .heading{
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .block-1{
+        width: 50%;
+        float: left;
+      }
+      .block-2{
+        width: 25%;
+        float: left;
+        text-align: right;
+        min-height: 50px;
+        &.center{
+          text-align: center;
+        }
+      }
+      .block-3{
+        width: 25%;
+        float: left;
+        text-align: right;
+      }
+      .label{
+        font-size: 12px;
+        color: #999999;
+      }
+      .value{
+        color: #000000;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 3px;
+        &.red{color: #ca5a66;}
+        &.green{color: #7ab573;}
+        &.yellow{color:#e59846;}
+        &.purpal{color:  #534b97;}
+      }
+      .karyakarta{
+        .label{font-size: 11px;}
+        .name{
+          color: #000000;
+          font-size: 18px;
+          margin-top: 10px;
+        }
+        .assistant{
+          color: #999;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+        .mobile{
+          color: #000;
+          font-size: 15px;
+          margin-top: 5px;
+        }
+        .k-block{
+          width: 33%;
+          float: left;
+          .value{font-size: 20px;}
+        }
+      }
+    }
+  }
+}
+.dropdown .dropdown-options{
+  overflow: scroll;
+    max-height: 500px;
+}

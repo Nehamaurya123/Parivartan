@@ -1,0 +1,117 @@
+@import '_base';
+
+.settings{
+  .success-message{
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #e7fae7;
+    color: #30bd30;
+    border: 1px solid #bff7bf;
+  }
+  .form{
+    padding: 30px 50px;
+    .action{
+      margin-left: 20px;
+      font-size: 16px;
+      color: #30bd30;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      cursor: pointer;
+      span{
+        font-size: 16px;
+        font-weight: 400;}
+    }
+    .action{
+      float: right;
+      font-size: 14px;
+      padding: 10px 15px;;
+      cursor: pointer;
+      font-weight: 500;
+      i{font-size: 16px;}
+      border: 0;
+      background: transparent;
+      margin-bottom: 15px;
+      &.positive{
+        color: #30bd30;
+        border: 1px solid #30bd30;;
+      }
+      &.negative{
+        color: #999;
+      }
+      &:hover{background: #eee;}
+    }
+  }
+  .banner{
+    border-bottom: 1px solid $light-grey;
+    margin-bottom: 30px;
+    height: 160px;
+    position: relative;
+    background: $white;
+
+    .image{
+      width: 100%;
+      height: 100%;
+      // background: url(../../assets/img/banner-settings.jpg) no-repeat center center / cover;
+      position: absolute;
+      top:0;
+      left: 0;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    .container{
+      position: relative;
+      padding-top: 50px;
+
+      .user{
+        text-align: center;
+        margin-top: 30px;
+
+        .avatar{
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          position: relative;
+        }
+
+        .info{
+          margin-top: 20px;
+
+          .headline{
+            margin: 10px 0;
+          }
+
+          .stat{
+            margin: 10px 0;
+            li{
+              display: inline-block;
+              margin:0 10px;
+              text-align: left;
+
+              .px24{
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .setting{
+    margin-top: 30px;
+  }
+  .delete-all{
+    width: auto;
+    float: right;
+    background: $red;
+    color: $white;
+    padding: 10px 20px;
+    margin: 30px;
+    cursor: pointer;
+  }
+  .delete-all:hover{
+    opacity: 0.91;
+  }
+}

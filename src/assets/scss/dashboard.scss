@@ -1,0 +1,245 @@
+
+@import '_base';
+
+.db-heading{
+  font-size: 12px;
+  color: #999;
+  width: auto;
+  float: left;
+  padding: 20px;
+  margin-left: 10px;
+}
+.db-actions{
+  float: right;
+  width: auto;
+  padding: 10px;
+  .action{
+    padding: 10px;
+    padding-top: 5px;
+    float: left;
+    cursor: pointer;
+    &:hover{background: #fafafa; }
+    i{font-size: 11px; color: #999; }
+  }
+}
+.db-summary{
+  margin-left: 20px;
+  .graph{
+    width: 100px;
+    float: left;
+    height: 80px;
+    padding: 18px 0 0px 0;
+  }
+  .values{
+    position: relative;
+    padding: 0 10px;
+    margin-left: 110px;
+    .arrow-container{height: 25px;}
+    .arrow{
+      position: relative;
+      font-size: 10px;
+      background: #00ba73;
+      padding: 2px 5px;
+      color: #fff;
+      width: auto;
+      float: left;
+      i{display: inline-flex;}
+      display: block;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #00ba73;
+        top: 16px;
+        left: 3px;
+      }
+      &.red{
+        background: #db495e;
+        &:after{
+          border-top: 5px solid #db495e;
+        }
+      }
+      &.yellow{
+        background: #f6961d;
+        &:after{
+          border-top: 5px solid #f6961d;
+        }
+      }
+    }
+    .heading{
+      font-size: 32px;
+      color: #333;
+      font-weight: 700;
+      margin-bottom: 5px;
+      &.purpal{
+        color: #5a3f97;
+      }
+      &.red{
+        color: #ea1f8d;
+      }
+      &.yellow{
+        color: #f6961d;
+      }
+    }
+    .label{
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
+.db-bottom{
+  background: #f2f2f2;
+  margin-top: 15px;
+  padding: 30px 15px;
+  .head{
+    margin-bottom: 25px;
+    display: table;
+    width: 100%;
+  }
+  .heading{
+    color: #999;
+    width: auto;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  a.heading{
+      float: right;
+      color: #5a3f97;
+  }
+  .db-outline{
+    border: 1px solid #ddd;
+    display: table;
+    width: 100%;
+  }
+  .db-blocks{
+    width: 200px;
+    float: left;
+    .db-block{
+      height: 80px;
+      padding: 18px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      &:last-child{border: 0;}
+      .block-head{
+        font-size: 24px;
+        color: #333;
+        font-weight: 700;
+        margin-bottom: 5px;
+        &.purpal{
+          color: #5a3f97;
+        }
+        &.red{
+          color: #ea1f8d;
+        }
+        &.yellow{
+          color: #f6961d;
+        }
+        &.green{
+          color: #00ba73;
+        }
+      }
+      .block-label{
+        font-size: 11px;
+        color: #999;
+      }
+      &.grey{
+        background: #f8f8f8;
+        .block-label{
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+  .db-map{
+    height: 480px;
+    margin-left: 200px;
+    .mapview{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.news-block{
+  background: #fff;
+  box-shadow: 1px 1px 10px #ddd;
+  border: 1px solid #eee;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 25px;
+  .block-head{margin-bottom: 15px;}
+  .date{
+    color: #999;
+    font-size: 11px;
+  }
+  .logo{
+    position: absolute;
+    width: 50px;
+    right: 0;
+    top: 5px;
+    right: 10px;
+  }
+  .heading{
+    width: 100%;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-line-clamp: 2;
+  }
+  .content{
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-line-clamp: 2;
+  }
+  .social{
+    width: 100%;
+    display: table;
+    .social-item{
+      width: auto;
+      float: left;
+      margin-right: 10px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #999;
+      font-size: 12px;
+      i{display: inline-flex;}
+    }
+  }
+  .action{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #ea1f8d;
+    color: #fff;
+    padding: 7px 11px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    &:hover{background: #ec55a8;}
+  }
+  &:hover{
+    .action{ display: block;}
+  }
+}
